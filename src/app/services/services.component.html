@@ -1,0 +1,54 @@
+<section id="services" class="py-20 bg-secondary/30">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Título e descrição -->
+      <div class="text-center mb-16">
+        <h2 class="font-arsenica text-4xl lg:text-5xl font-bold text-accent mb-6">
+          Serviços
+        </h2>
+        <p class="font-poppins text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          Oferecemos diferentes modalidades de atendimento psicológico, sempre 
+          priorizando o acolhimento e o cuidado individualizado
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid lg:grid-cols-3 gap-8 mb-12">
+        <div *ngFor="let service of services" class="border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg rounded-xl">
+          <div class="text-center pb-4 pt-6 px-4">
+            <div class="text-5xl mb-4">{{ service.icon }}</div>
+            <h3 class="font-arsenica text-2xl text-accent">{{ service.title }}</h3>
+          </div>
+          <div class="px-6 pb-6 space-y-4">
+            <p class="font-poppins text-gray-600 leading-relaxed">
+              {{ service.description }}
+            </p>
+            <ul class="space-y-2">
+              <li *ngFor="let feature of service.features" class="font-poppins text-sm text-gray-600 flex items-center">
+                <span class="text-primary mr-2">✓</span>
+                {{ feature }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-primary/10 rounded-2xl p-8 text-center">
+        <h3 class="font-arsenica text-3xl font-bold text-accent mb-4">
+          Pronto para começar?
+        </h3>
+        <p class="font-poppins text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+          O primeiro passo é sempre o mais importante. Entre em contato e vamos 
+          conversar sobre como posso ajudar você em sua jornada de autoconhecimento.
+        </p>
+        <button 
+          (click)="scrollToContact()"
+          class="bg-accent hover:bg-accent/80 text-white font-poppins px-8 py-4 text-lg rounded"
+        >
+          Agendar Primeira Consulta
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

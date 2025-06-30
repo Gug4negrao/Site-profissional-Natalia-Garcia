@@ -1,0 +1,43 @@
+<section id="home" class="min-h-screen flex items-center bg-gradient-to-br from-secondary via-white to-primary/10">
+  <div class="container mx-auto px-4 py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Texto e botões -->
+      <div class="space-y-8 animate-fade-in">
+        <div class="space-y-4">
+          <p class="font-poppins text-primary font-medium text-lg">
+            Psicóloga CRP XX/XXXXX
+          </p>
+          <h1 class="font-arsenica text-5xl lg:text-6xl font-bold text-accent leading-tight">
+            Natália Garcia
+          </h1>
+          <p class="font-poppins text-xl text-gray-600 leading-relaxed">
+            Cuidando da sua saúde mental com acolhimento, profissionalismo e dedicação. 
+            Sessões de terapia individual em ambiente seguro e confidencial.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button (click)="scrollToContact()" class="bg-primary hover:bg-primary/80 text-white font-poppins px-8 py-4 text-lg rounded">
+            Agendar Consulta
+          </button>
+          <button (click)="scrollToAbout()" class="border border-accent text-accent hover:bg-accent hover:text-white font-poppins px-8 py-4 text-lg rounded">
+            Conheça meu trabalho
+          </button>
+        </div>
+      </div>
+
+      <!-- Ícone animado -->
+      <div class="relative">
+        <div class="bg-primary/10 rounded-full w-96 h-96 mx-auto flex items-center justify-center">
+          <div class="bg-primary/20 rounded-full w-80 h-80 flex items-center justify-center">
+            <div class="bg-primary/30 rounded-full w-64 h-64 flex items-center justify-center">
+              <div class="text-6xl">🧠</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

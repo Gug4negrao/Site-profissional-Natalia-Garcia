@@ -1,0 +1,74 @@
+<header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-secondary">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <div class="font-arsenica text-2xl font-bold text-accent">
+        Natália Garcia
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <button 
+          (click)="scrollToSection('home')"
+          class="font-poppins text-accent hover:text-primary transition-colors"
+        >
+          Início
+        </button>
+        <button 
+          (click)="scrollToSection('about')"
+          class="font-poppins text-accent hover:text-primary transition-colors"
+        >
+          Sobre mim
+        </button>
+        <button 
+          (click)="scrollToSection('services')"
+          class="font-poppins text-accent hover:text-primary transition-colors"
+        >
+          Serviços
+        </button>
+        <button 
+          (click)="scrollToSection('contact')"
+          class="bg-primary hover:bg-primary/80 text-white font-poppins px-4 py-2 rounded"
+        >
+          Contato
+        </button>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden" (click)="toggleMenu()">
+        <div class="space-y-1">
+          <div class="w-6 h-0.5 bg-accent"></div>
+          <div class="w-6 h-0.5 bg-accent"></div>
+          <div class="w-6 h-0.5 bg-accent"></div>
+        </div>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav *ngIf="isMenuOpen" class="md:hidden mt-4 pb-4 space-y-4">
+      <button 
+        (click)="scrollToSection('home')"
+        class="block font-poppins text-accent hover:text-primary transition-colors"
+      >
+        Início
+      </button>
+      <button 
+        (click)="scrollToSection('about')"
+        class="block font-poppins text-accent hover:text-primary transition-colors"
+      >
+        Sobre mim
+      </button>
+      <button 
+        (click)="scrollToSection('services')"
+        class="block font-poppins text-accent hover:text-primary transition-colors"
+      >
+        Serviços
+      </button>
+      <button 
+        (click)="scrollToSection('contact')"
+        class="bg-primary hover:bg-primary/80 text-white font-poppins w-full px-4 py-2 rounded"
+      >
+        Contato
+      </button>
+    </nav>
+  </div>
+</header>
