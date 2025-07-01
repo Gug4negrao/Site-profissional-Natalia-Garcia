@@ -7,4 +7,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './contact.component.html'
 })
 
-export class ContactComponent {}
+export class ContactComponent {
+   email = 'cgnati30@hotmail.com';
+}

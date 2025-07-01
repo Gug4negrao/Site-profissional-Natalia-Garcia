@@ -12,7 +12,7 @@ export class ServicesComponent {
     {
       title: 'Terapia Individual',
       description: 'Sessões personalizadas para trabalhar questões específicas como ansiedade, depressão, autoestima e relacionamentos.',
-      icon: 'fa-regular fa-user',
+      icon: 'fas fa-user',
       features: [
         'Sessões de 50 minutos',
         'Ambiente confidencial',
@@ -23,7 +23,7 @@ export class ServicesComponent {
     {
       title: 'Avaliação Psicológica',
       description: 'Processo estruturado para compreender aspectos da personalidade e funcionamento psicológico.',
-      icon: 'fa-regular fa-clipboard',
+      icon: 'fas fa-clipboard',
       features: [
         'Instrumentos validados',
         'Relatório detalhado',
