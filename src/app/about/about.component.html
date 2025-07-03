@@ -5,61 +5,32 @@
         <h2 class="font-arsenica text-4xl lg:text-5xl font-bold text-accent mb-6">
           Sobre mim
         </h2>
-        <p class="font-poppins text-xl text-gray-600 leading-relaxed">
-          Conheça minha trajetória e abordagem terapêutica
-        </p>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
        <div class="space-y-6">
-          <!-- Parte visível -->
-          <p class="font-poppins text-lg text-gray-700 leading-relaxed">
+          <p class="font-poppins text-md text-gray-700 leading-relaxed">
             Prazer, sou Natália Garcia e a minha missão é oferecer um espaço seguro e acolhedor
             onde você possa explorar seus sentimentos, superar desafios,
             fortalecer a sua mente e encontrar caminhos para o bem-estar
             emocional. Acredito que cada pessoa é única
           </p>
-          <p class="font-poppins text-lg text-gray-700 leading-relaxed">
+          <p class="font-poppins text-md text-gray-700 leading-relaxed">
             Minha trajetória na psicologia é movida por uma profunda curiosidade pelo
             ser humano e suas individualidades. Sou uma pessoa que acolhe, escuta 
             e constrói junto o melhor para você e seu bem-estar. Ao longo da minha
             formação, tive experiências enriquecedoras que moldaram a profissional
             que sou hoje:
           </p>
-
-          <!-- Parte oculta -->
-          <div *ngIf="moreContent" class="space-y-6">
-            <ul class="list-disc font-poppins text-lg text-gray-700 leading-relaxed pl-6">
-              <li>
-                <span class="font-semibold">Estágio no CAPS Infantojuvenil</span>: Atuei no Centro de Atenção Psicossocial Infantojuvenil, onde pude oferecer suporte essencial
-                à saúde mental de crianças, adolescentes e seus responsáveis, compreendendo as nuances do desenvolvimento e suas complexidades.
-              </li>
-              <li>
-                <span class="font-semibold">Orientação de Carreira para Adolescentes</span>: Tive o privilégio de guiar adolescentes em programas de orientação para carreira, 
-                auxiliando-os a desvendar seus potenciais e a fazer escolhas conscientes sobre o futuro.
-              </li>
-              <li>
-                <span class="font-semibold">Projeto Humanamente no Seabrigo</span>: Participei do projeto "Humanamente" no Seabrigo, um trabalho dedicado ao acolhimento e 
-                à promoção da saúde mental dos moradores, o que reforçou minha visão humanizada da prática.
-              </li>
-              <li>         
-                <span class="font-semibold">Atendimento em Clínica-Escola (Abordagem Fenomenológica)</span>: Realizei atendimentos em clínica-escola, aplicando a abordagem fenomenológica.
-                Essa experiência me permitiu aprofundar na compreensão das vivências individuais, valorizando a singularidade de cada um.
-              </li>
-            </ul>
-            <p class="font-poppins text-lg text-gray-700 leading-relaxed">
-              Minha dedicação à psicologia é constante. Sou uma profissional estudiosa e busco contínuo aprimoramento
-              para oferecer o melhor suporte a quem me procura. Estou pronta para caminhar ao seu lado, oferecendo um espaço
-              de reflexão e crescimento para que você possa desenvolver suas ferramentas internas e viver uma vida mais plena.
-            </p>
-          </div>
-          <a (click)="moreContent = !moreContent" class="font-poppins text-primary font-medium text-lg underline mt-1">
-            {{!moreContent ? "Ler mais" : "Diminuir"}}
-          </a>
+          <p class="font-poppins text-md text-gray-700 leading-relaxed">
+            Minha dedicação à psicologia é constante. Sou uma profissional estudiosa e busco contínuo aprimoramento
+            para oferecer o melhor suporte a quem me procura. Estou pronta para caminhar ao seu lado, oferecendo um espaço
+            de reflexão e crescimento para que você possa desenvolver suas ferramentas internas e viver uma vida mais plena.
+          </p>
         </div>
         <div class="bg-secondary/50 rounded-2xl flex items-center justify-center h-80">
-          <img src="assets/foto-principal.jpeg" alt="Foto principal de Natalia" class="h-full w-1/2 object-cover rounded-l-2xl"/>
-          <img src="assets/foto2.jpeg" alt="Segunda foto de Natalia" class="h-full w-1/2 object-cover rounded-l-2xl transform -scale-x-100"/>
+          <img src="assets/about_1.jpeg" alt="Foto principal de Natalia" class="h-full w-1/2 object-cover rounded-l-2xl"/>
+          <img src="assets/about_2.jpeg" alt="Segunda foto de Natalia" class="h-full w-1/2 object-cover rounded-l-2xl transform -scale-x-100"/>
         </div>
       </div>
 

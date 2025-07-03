@@ -13,17 +13,21 @@
 
       <!-- Cards -->
       <div class="mb-12 flex justify-center">
-        <div *ngFor="let service of services" class="bg-card border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg rounded-xl w-full max-w-2xl">
-          <div class="text-center pb-4 pt-6 px-4">
-            <i class="text-5xl mb-4 text-primary" [ngClass]="service.icon"></i>
-            <h3 class="font-arsenica text-2xl text-accent">{{ service.title }}</h3>
+        <div class="flex flex-col md:flex-row items-center bg-card border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg rounded-xl w-full max-w-5xl overflow-hidden">
+          <!-- IMAGEM -->
+          <div class="w-full md:w-1/2 h-64 md:h-auto">
+            <img src="assets/service_1.jpeg" alt="Foto da psicóloga" class="object-cover w-full h-full hidden md:block">
+            <img src="assets/service_1_sm.jpeg" alt="Foto da psicóloga" class="object-cover object-top w-full h-full md:hidden">
           </div>
-          <div class="px-6 pb-6 space-y-4">
-            <p class="font-poppins text-gray-600 leading-relaxed">
+          <!-- CONTEÚDO -->
+          <div class="w-full md:w-1/2 text-center md:text-left pb-6 pt-6 px-6">
+            <i class="text-5xl mb-4 text-primary" [ngClass]="service.icon"></i>
+            <h3 class="font-arsenica text-2xl text-accent mb-4">{{ service.title }}</h3>
+            <p class="font-poppins text-gray-600 leading-relaxed mb-4">
               {{ service.description }}
             </p>
             <ul class="space-y-2">
-              <li *ngFor="let feature of service.features" class="font-poppins text-sm text-gray-600 flex items-center">
+              <li *ngFor="let feature of service.features" class="font-poppins text-sm text-gray-600 flex items-center justify-center md:justify-start">
                 <span class="text-primary mr-2">✓</span>
                 {{ feature }}
               </li>
@@ -32,24 +36,25 @@
         </div>
       </div>
 
-
-
       <!-- CTA -->
-      <div class="bg-primary/10 rounded-2xl p-8 text-center">
-        <h3 class="font-arsenica text-3xl font-bold text-accent mb-4">
-          Pronto para começar?
-        </h3>
-        <p class="font-poppins text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-          O primeiro passo é sempre o mais importante. Entre em contato e vamos 
-          conversar sobre como posso ajudar você em sua jornada de autoconhecimento.
-        </p>
-        <a 
-          href="https://api.whatsapp.com/send/?phone=5531998748837&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+o+seu+atendimento&type=phone_number&app_absent=0" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="bg-accent hover:bg-accent/80 text-white font-poppins px-8 py-4 text-lg rounded inline-block">
-          Agendar Primeira Consulta
-        </a>
+      <div class="bg-primary/10 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h3 class="font-arsenica text-3xl font-bold text-accent mb-4">Pronto para começar?</h3>
+          <p class="font-poppins text-lg text-gray-600 mb-6">
+            O primeiro passo é sempre o mais importante. Entre em contato e vamos 
+            conversar sobre como posso ajudar você em sua jornada de autoconhecimento.
+          </p>
+          <a 
+            href="https://api.whatsapp.com/send/?phone=5531998748837&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+o+seu+atendimento&type=phone_number&app_absent=0" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="bg-accent hover:bg-accent/80 text-white font-poppins px-8 py-4 text-lg rounded inline-block">
+            Agendar Primeira Consulta
+          </a>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src="assets/service_2.jpeg" alt="Psicóloga" class="rounded-xl w-full h-auto object-cover">
+        </div>
       </div>
     </div>
   </div>
