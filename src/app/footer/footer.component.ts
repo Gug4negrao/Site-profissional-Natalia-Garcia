@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  email = 'cgnati30@hotmail.com'
+  email = 'entendendosuamentepsi@gmail.com'
 }

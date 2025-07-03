@@ -17,10 +17,10 @@
         <div class="space-y-8">
           <div class="border-primary/20 border rounded-lg p-6">
             <div class="font-arsenica text-2xl text-accent flex items-center mb-2">
-              <span class="text-3xl mr-4"><i class="fas fa-phone text-primary"></i></span>Telefone e WhatsApp
+              <span class="text-3xl mr-4"><i class="fa-brands fa-whatsapp text-primary"></i></span>WhatsApp
             </div>
             <p class="font-poppins text-lg text-gray-700 mb-2">(31) 99874-8837</p>
-            <p class="font-poppins text-sm text-gray-600">Segunda a sexta: 8h às 18h</p>
+            <p class="font-poppins text-sm text-gray-600">Segunda a sexta: Resposta assim que possível</p>
           </div>
 
           <div class="border-primary/20 border rounded-lg p-6">
@@ -28,39 +28,24 @@
               <span class="text-3xl mr-4"><i class="fa-solid fa-envelope text-primary"></i></span>E-mail
             </div>
             <p class="font-poppins text-lg text-gray-700 mb-2">{{email}}</p>
-            <p class="font-poppins text-sm text-gray-600">Respondo em até 24 horas</p>
-          </div>
-
-          <div class="border-primary/20 border rounded-lg p-6">
-            <div class="font-arsenica text-2xl text-accent flex items-center mb-2">
-              <span class="text-3xl mr-4"><i class="fa-solid fa-desktop text-primary"></i></span>Atendimento
-            </div>
-            <p class="font-poppins text-lg text-gray-700 mb-2">Seções Online</p>
-            <p class="font-poppins text-sm text-gray-600">Plataforma segura e confidencial</p>
-            <p class="font-poppins text-sm text-gray-600">Flexibilidade de horários</p>
+            <p class="font-poppins text-sm text-gray-600">Resposta assim que possível</p>
           </div>
         </div>
 
         <!-- Formulário de contato -->
         <div class="border-primary/20 border rounded-lg p-6">
           <div class="font-arsenica text-2xl text-accent mb-6">Envie uma mensagem</div>
-          <form class="space-y-6">
+          <form (ngSubmit)="sendWhatsapp()" #contatoForm="ngForm" class="space-y-6">
             <section>
-              <input type="text" placeholder="Seu nome completo" class="font-poppins w-full border rounded px-4 py-2" required />
-              <!-- <div class="text-red-600 text-sm mt-2 ml-1">Nome é obrigatório.</div> -->
+              <input name="nome" [(ngModel)]="formData.nome" type="text" placeholder="Seu nome completo" class="font-poppins w-full border rounded px-4 py-2" required />
             </section>
             <section>
-              <input type="email" placeholder="Seu e-mail" class="font-poppins w-full border rounded px-4 py-2" required />
-              <!-- <div class="text-red-600 text-sm mt-2 ml-1">E-mail válido é obrigatório.</div> -->
+              <input name="email" [(ngModel)]="formData.email" type="email" placeholder="Seu e-mail" class="font-poppins w-full border rounded px-4 py-2" required />
             </section>
             <section>
-                <input type="text" placeholder="Seu telefone/WhatsApp" class="font-poppins w-full border rounded px-4 py-2" />
+              <textarea name="mensagem" [(ngModel)]="formData.mensagem" placeholder="Como posso ajudar você? Descreva brevemente o que está buscando..." rows="5" class="font-poppins w-full border rounded px-4 py-2" required></textarea>
             </section>
-            <section>
-              <textarea placeholder="Como posso ajudar você? Descreva brevemente o que está buscando..." rows="5" class="font-poppins w-full border rounded px-4 py-2" required></textarea>
-              <!-- <div class="text-red-600 text-sm mt-2 ml-1">Mensagem é obrigatória.</div> -->
-            </section>
-            <button type="submit" class="w-full bg-primary hover:bg-primary/80 text-white font-poppins text-lg py-3 rounded">Enviar Mensagem</button>
+            <button type="submit" class="w-full bg-accent hover:bg-accent/80 text-white font-poppins text-lg py-3 rounded">Enviar Mensagem</button>
           </form>
         </div>
       </div>

@@ -11,37 +11,13 @@ export class ServicesComponent {
   services = [
     {
       title: 'Terapia Individual',
-      description: 'Sessões personalizadas para trabalhar questões específicas como ansiedade, depressão, autoestima e relacionamentos.',
+      description: 'Sessões semanais para conversarmos sobre o que quiser. Será o seu espaço para explorar conquistas, receios, celebrações, medos, angústias e tudo aquilo que acredita que seja importante para o seu desenvolvimento pessoal. Juntos, vamos construir novos olhares e caminhos para o seu bem-estar.',
       icon: 'fas fa-user',
       features: [
         'Sessões de 50 minutos',
-        'Ambiente confidencial',
-        'Abordagem personalizada',
-        'Acompanhamento contínuo'
+        'Modalidade Online'
       ]
     },
-    {
-      title: 'Avaliação Psicológica',
-      description: 'Processo estruturado para compreender aspectos da personalidade e funcionamento psicológico.',
-      icon: 'fas fa-clipboard',
-      features: [
-        'Instrumentos validados',
-        'Relatório detalhado',
-        'Orientações específicas',
-        'Devolutiva completa'
-      ]
-    },
-    {
-      title: 'Orientação Familiar',
-      description: 'Suporte para famílias que buscam melhorar a comunicação e resolver conflitos.',
-      icon: 'fa-solid fa-people-roof',
-      features: [
-        'Dinâmicas familiares',
-        'Mediação de conflitos',
-        'Estratégias de comunicação',
-        'Fortalecimento de vínculos'
-      ]
-    }
   ];
 
   scrollToContact(): void {

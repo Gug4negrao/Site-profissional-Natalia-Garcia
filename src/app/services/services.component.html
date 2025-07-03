@@ -7,14 +7,13 @@
           Serviços
         </h2>
         <p class="font-poppins text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-          Oferecemos diferentes modalidades de atendimento psicológico, sempre 
-          priorizando o acolhimento e o cuidado individualizado
+          Ofereço atendimento psicológico online especializado em terapia individual, priorizando o acolhimento e o cuidado personalizado
         </p>
       </div>
 
       <!-- Cards -->
-      <div class="grid lg:grid-cols-3 gap-8 mb-12">
-        <div *ngFor="let service of services" class="bg-card border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg rounded-xl">
+      <div class="mb-12 flex justify-center">
+        <div *ngFor="let service of services" class="bg-card border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg rounded-xl w-full max-w-2xl">
           <div class="text-center pb-4 pt-6 px-4">
             <i class="text-5xl mb-4 text-primary" [ngClass]="service.icon"></i>
             <h3 class="font-arsenica text-2xl text-accent">{{ service.title }}</h3>
@@ -33,6 +32,8 @@
         </div>
       </div>
 
+
+
       <!-- CTA -->
       <div class="bg-primary/10 rounded-2xl p-8 text-center">
         <h3 class="font-arsenica text-3xl font-bold text-accent mb-4">
@@ -42,12 +43,13 @@
           O primeiro passo é sempre o mais importante. Entre em contato e vamos 
           conversar sobre como posso ajudar você em sua jornada de autoconhecimento.
         </p>
-        <button 
-          (click)="scrollToContact()"
-          class="bg-accent hover:bg-accent/80 text-white font-poppins px-8 py-4 text-lg rounded"
-        >
+        <a 
+          href="https://api.whatsapp.com/send/?phone=5531998748837&text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+o+seu+atendimento&type=phone_number&app_absent=0" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="bg-accent hover:bg-accent/80 text-white font-poppins px-8 py-4 text-lg rounded inline-block">
           Agendar Primeira Consulta
-        </button>
+        </a>
       </div>
     </div>
   </div>

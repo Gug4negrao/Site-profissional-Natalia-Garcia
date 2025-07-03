@@ -7,5 +7,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   templateUrl: './about.component.html',
 })
-export class AboutComponent {}
+export class AboutComponent {
+  moreContent = false;
+}
 

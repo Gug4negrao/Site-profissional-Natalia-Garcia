@@ -1,0 +1,29 @@
+<section id="faq" class="py-20 bg-secondary/30">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-arsenica text-4xl lg:text-5xl font-bold text-accent mb-6">
+          Perguntas Frequentes
+        </h2>
+        <p class="font-poppins text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          Esclarecendo suas principais dúvidas sobre a terapia online e como posso ajudar você
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-primary/10">
+        <div class="w-full space-y-4">
+          <div *ngFor="let faq of faqs; let i = index" class="border-b border-gray-200 last:border-b-0">
+            <div class="flex items-center hover:a.text-primary">
+                <a (click)="toggleAccordion(i)" class="w-full text-left font-poppins font-semibold text-accent transition-colors py-2 hover:text-primary hover:underline">{{ faq.question }}</a>
+                <i (click)="toggleAccordion(i)" class="fa-solid fa-angle-down hover:text-primary" *ngIf="activeIndex !== i"></i>
+                <i (click)="toggleAccordion(i)" class="fa-solid fa-angle-up hover:text-primary" *ngIf="activeIndex === i"></i>
+            </div>
+            <div *ngIf="activeIndex === i" class="font-poppins text-gray-600 leading-relaxed pt-3 py-2 text-sm">
+              {{ faq.answer }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

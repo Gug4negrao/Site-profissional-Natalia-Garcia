@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss'] // se quiser adicionar CSS customizado
+  styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent {
   scrollToContact(): void {
