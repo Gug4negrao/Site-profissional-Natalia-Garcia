@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../header/header.component';
 import { HeroComponent } from '../../hero/hero.component';
 import { AboutComponent } from '../../about/about.component';
+import { TimelineComponent } from '../../timeline/timeline.component';
 import { ServicesComponent } from '../../services/services.component';
 import { FaqComponent } from '../../faq/faq.component';
 import { ContactComponent } from '../../contact/contact.component';
@@ -16,6 +17,7 @@ import { CommonModule } from '@angular/common';
     HeaderComponent,
     HeroComponent,
     AboutComponent,
+    TimelineComponent,
     ServicesComponent,
     FaqComponent,
     ContactComponent,
@@ -25,6 +27,7 @@ import { CommonModule } from '@angular/common';
     <app-header></app-header>
     <app-hero></app-hero>
     <app-about></app-about>
+    <app-timeline></app-timeline>
     <app-services></app-services>
     <app-faq></app-faq>
     <app-contact></app-contact>
